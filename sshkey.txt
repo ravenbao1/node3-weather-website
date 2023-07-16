@@ -3,4 +3,5 @@ cat ~/.ssh/id_rsa.pub -> to display the ssh key
 copy the key content and paste to GitHub
 ssh -T git@github.com -> to test connectivity to GitHub
 this is required before code can be pushed to GitHub repo
+git branch -M main
 git push -u origin main -> push code to GitHub repo
