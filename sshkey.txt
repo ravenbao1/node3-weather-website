@@ -5,3 +5,4 @@ ssh -T git@github.com -> to test connectivity to GitHub
 this is required before code can be pushed to GitHub repo
 git branch -M main
 git push -u origin main -> push code to GitHub repo
+git remote set-url origin "" -> reset the remote origin URL
