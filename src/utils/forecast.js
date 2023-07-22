@@ -11,7 +11,10 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('There is no matching cordinates! Try another search', undefined)
         } else {
-            callback(undefined, body.current.weather_descriptions[0])
+            console.log(url)
+            //console.log(latitude)
+            //console.log(longitude)
+            callback(undefined, "Local time: " + body.current.observation_time + " Weather: " + body.current.weather_descriptions[0])
         }
     })
 }
